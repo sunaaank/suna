@@ -100,6 +100,7 @@ p {
 	bottom: 0;
 	border-radius: 32px;
 	margin: 20px;
+	z-index: 1;
 }
 
 .banner-title a {
@@ -115,14 +116,11 @@ p {
 	text-align: center;
 }
 
-/* about */
-.about {
-	background-color: #F6F8FA;
 
-}
 
 /* landing */
 .landing {
+	/* background-image: url('/kimbug-css1-foundation/media-query/assets/img-bg.jpg'); */
 	background-color: #fdded8;
 	text-align: center;
 }
@@ -169,6 +167,37 @@ p {
 	margin-right: 8px;
 }
 
+/* about AD */
+.ad {
+	background-color: #F6F8FA;
+	text-align: center;
+}
+
+.ad h2{
+	font-size: 32px;
+}
+
+.ad p{
+	font-size: 18px;
+	padding: 8px;
+}
+
+.ad .my-email {
+	font-size: 30px;
+	background-color: yellow;	
+}
+
+.button-group.ad {
+	margin-top: 32px;
+	
+}
+
+.button-group.ad .fill-button {
+	margin-top: 32px;
+	width: 120px;
+	height: 110px;
+	font-size: 20px;
+}
 
 /* program */
 .program.section.part {
@@ -223,10 +252,14 @@ p {
 	color: #fff;
 }
 
+.program-card:hover p {
+	color: #fff;
+}
+
 .program-card img {
 	display: block;
 	width: auto;
-	height: 195px;
+	height: 174px;
 	margin: 0 auto 16px;
 }
 
@@ -234,6 +267,10 @@ p {
 	font-size: 18px;
 	line-height: 1.33333333;
 	letter-spacing: -0.02em;
+	transition: color 400ms ease-in-out;
+}
+
+.program-card p {
 	transition: color 400ms ease-in-out;
 }
 
@@ -247,6 +284,31 @@ p {
 	
 	.fill-button {
 		
+	}
+	
+	/* banner */
+	.banner {
+		width: 280px;
+		background-color: #000;
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		border-radius: 40px;
+		margin: 20px;
+		z-index: 1;
+	}
+
+	.banner-title a {
+		width: 100%;
+		height: 80px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		font-size: 24px;
+		font-weight: 400;
+		color: #fff;
+		text-align: center;
 	}
 	
 	.section {
@@ -272,6 +334,26 @@ p {
 	
 	.landing-desc {
 		margin-bottom: 30px;
+	}
+	
+	.ad h2{
+		font-size: 40px;
+	}
+
+	.ad p{
+		font-size: 24px;
+		padding: 8px;
+	}
+
+	.button-group.ad .fill-button {
+	width: 140px;
+	height: 140px;
+	font-size: 20px;
+	}
+
+	.ad .my-email {
+		font-size: 36px;
+		background-color: yellow;	
 	}
 	
 	.program {
